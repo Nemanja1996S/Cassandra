@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 States
+  ul 
+    each state, s in states 
+      li 
+        a(href="/state/#{state.id}") #{state.name}
+
+  a(href="/addState") Add State 

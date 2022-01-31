@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+    h1 Edit State 
+    form(name='editState', method='post', action='/editState')
+        div 
+         input#inputName(type='text', placeholder='Add State name', name='name' value='#{name}')
+        div 
+            input#inputRuler(type='text', placeholder='Add Ruler name', name='ruler' value='#{ruler}')
+        div 
+            input#inputYear(type='int', placeholder='Add year', name='year_joined' value='#{year_joined}')
+        div 
+            input(type='hidden', name='id' value='#{id}')
+            button#btnSubmit(type='submit') Edit State

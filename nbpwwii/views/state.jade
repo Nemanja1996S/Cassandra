@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+    h1 State Details 
+    a(href="/") Go Back
+    ul 
+        li Id: #{id}
+        li Name: #{name}
+        li Ruler: #{ruler}
+        li Year joined war: #{year_joined}
+
+    a(class="editState" href="/editState/#{id}") Edit
+    | | 
+    a(class="deleteState" href="" data-id="#{id}") Delete

@@ -1,0 +1,16 @@
+extends layout 
+
+block content 
+    h1 Insert new State 
+    
+    form(name='addState', method='post', action='/addState')
+       div 
+            input#inputName(type='text', placeholder='Add State', name='name')
+        div 
+            input#inputRuler(type='text', placeholder='Add Ruler name', name='ruler')
+        div 
+            input#inputYear(type='int', placeholder='Add year', name='year_joined')
+        div 
+            button#btnSubmit(type='submit') Add State
+        
+        a(href="/") Go Back
